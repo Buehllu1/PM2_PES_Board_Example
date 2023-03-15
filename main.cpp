@@ -106,11 +106,11 @@ int main()
             if (servo_S1.isEnabled() && servo_S1.isEnabled()) {
                 
                 // command servo position, increment normalised angle every second until it reaches 1.0f
-                servo_S1.setNorlalisedAngle(servo_S1_angle);
+                servo_S1.setNormalisedAngle(servo_S1_angle);
                 if (servo_S1_angle < 1.0f & servo_counter%loops_per_seconds == 0 & servo_counter != 0) {
                     servo_S1_angle += 0.01f;
                 }
-                servo_S2.setNorlalisedAngle(servo_S2_angle);
+                servo_S2.setNormalisedAngle(servo_S2_angle);
                 if (servo_S2_angle < 1.0f & servo_counter%loops_per_seconds == 0 & servo_counter != 0) {
                     servo_S2_angle += 0.01f;
                 }
